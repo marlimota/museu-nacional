@@ -1,0 +1,144 @@
+body {
+  background: #f4f2ec url(../images/fundo.png) repeat-x;
+  font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+a:link, a:active, a:visited {
+  color: #af670a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #227115;
+}
+
+#logo a{
+  width: 248px;
+  height: 21px;
+  display: block;
+  background: url(../images/logo.png) no-repeat;
+  float: left;
+  margin-top: 20px;
+}
+
+header {
+  padding: 15px 0;
+  height: 55px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20px;
+  float:right;
+}
+
+nav ul li {
+  float: left;
+
+}
+
+nav ul li a:link {
+  display: block;
+  margin-right: 25px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #535858;
+}
+
+.carrossel ul li img {
+  width: 800px;
+  height: 420px;
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+* { margin: 0; padding: 0; }
+
+.slider {
+  display: block;
+  height: 290px;
+  width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: #f4f2ec;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 20px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 60px;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+section.conteudo {
+  margin-top: 140px;
+  font: 16px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+section.conteudo p {
+  padding: 8px;
+}
+
+section.conteudo ul li {
+  margin-left: 30px;
+}
+
+footer {
+  clear: both;
+  padding: 20px 0 30px 0;
+  text-align: center;
+  background: url(../images/fundo-rodape.png) no-repeat center top;
+}

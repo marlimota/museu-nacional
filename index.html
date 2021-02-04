@@ -8,11 +8,19 @@
   <meta property="og:title" content="Museu Nacional" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://marlimota.github.io/museu-nacional/" />
-  <meta property="og:image:url" content="images/museu.png" />
   <meta property="og:description" content="Site description" />
+
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Museu_nacional_logo.png/220px-Museu_nacional_logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="220">
+  <meta property="og:image:height" content="195">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
+
   <title>Museu Nacional</title>
 </head>
 
@@ -25,11 +33,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Exposições</a></li>
-          <li><a href="#">Pesquisa</a></li>
-          <li><a href="#">Acervo</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exposicoes.html">Exposições</a></li>
+          <li><a href="pesquisa.html">Pesquisa</a></li>
+          <li><a href="acervo.html">Acervo</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -64,7 +72,7 @@
               <li><a href="">Preguiça gigante e tigre-dentes-de-sabre</a></li>
               <li><a href="">Teresa Cristina: A imperatriz Arqueóloga</a></li>
               <br>
-              <a href=""><strong>Veja todos</strong></a>
+              <a href="https://www.youtube.com/channel/UC0_2S5qBQlr1twzbra3XJag"><strong>Veja todos</strong></a>
             </ul>
           </article>
           <article id="historia">
@@ -73,7 +81,7 @@
               científica do Brasil que, até setembro de 2018, figurou como um dos maiores museus de história natural e
               de antropologia das Américas. Localiza-se no interior do parque da Quinta da Boa Vista, na cidade do Rio
               de Janeiro, estando instalado no Palácio de São Cristóvão.</p>
-            <a href=""><strong>Leia mais</strong></a>
+            <a href="https://pt.wikipedia.org/wiki/Museu_Nacional_(Rio_de_Janeiro)"><strong>Leia mais</strong></a>
           </article>
         </section>
 
@@ -92,18 +100,18 @@
               <input class="campo" type="text" name="" id="data" value="dd/mm/aaaa">
               <br>
               <label for="qtd">Número de Pessoas</label>
-              <input class="campo" style="width: 15px;" type="text" name="" id="qtd" value="1">
+              <input class="campo" style="width: 20px;" type="text" name="" id="qtd" value="0">
+              <input class="botao" type="submit" name="" id="" value="verificar disponibilidade">
             </fieldset>
-            <input class="botao" type="submit" name="" id="" value="verificar disponibilidade">
           </form>
         </section>
 
         <section id="galeria">
           <h4>Galeria de Fotos</h4>
-          <a href=""><img src="images/imagem1.jpg" height="93" width="93" alt=""></a>
-          <a href=""><img src="images/imagem2.jpg" height="93" width="93" alt=""></a>
-          <a href=""><img src="images/imagem3.jpg" height="93" width="93" alt=""></a>
-          <a href=""><img src="images/imagem4.jpg" height="93" width="93" alt=""></a>
+          <a href="/acervo.html"><img src="images/imagem1.jpg" height="93" width="93" alt=""></a>
+          <a href="/acervo.html"><img src="images/imagem2.jpg" height="93" width="93" alt=""></a>
+          <a href="/acervo.html"><img src="images/imagem3.jpg" height="93" width="93" alt=""></a>
+          <a href="/acervo.html"><img src="images/imagem4.jpg" height="93" width="93" alt=""></a>
         </section>
 
       </aside>
@@ -116,6 +124,8 @@
     </footer>
 
   </div>
+
+  <script type="text/javascript" src="/js/script.js"></script>
 </body>
 
 </html>
